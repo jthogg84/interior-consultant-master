@@ -148,10 +148,10 @@ font-size: 10px;
     list-style: none;
     transform: translateY(-100%);
     transition: transform 600ms ease-in-out;
-    border-bottom: solid 2px white;
+   
 }
 
-nav ul{
+.nav-ul{
     list-style: none;
     text-align: center;
 }
@@ -193,11 +193,23 @@ nav ul{
 }
 
 .mnu-logo{
+    font-family: 'Crimson Pro', serif;
     font-size: 14px;
-    line-height: 20px;
+    font-weight: 200;
+    line-height: 17px;
+    border: solid white 2px;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
-
+.cls{
+    position: fixed;
+    top:1.5rem;
+    right: 2.6rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
 
 
 /*Desktop Mode*/
@@ -214,7 +226,14 @@ nav ul{
     
     }
     
-    nav{
+    .mnu-logo{
+        font-family: 'Crimson Pro', serif;
+       
+        border: solid white 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        color: white;
+    }   nav{
         display: none;
         
     }
@@ -224,6 +243,7 @@ nav ul{
         position: static;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         transform: translateY(0%);
         height: auto;
